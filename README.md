@@ -58,7 +58,7 @@ And click "GENERATE CHART", you will see a line graph plotted updated in all bro
 And click "GENERATE CHART", you will see a line graph got cleared in all browsers.
 
 
-![Image of Char Plot Challenge](https://github.com/rderoci/challenge-eventstore/raw/master/challenge_frontend_romulo.png)
+![Image of Char Plot Challenge](https://github.com/rderoci/challenge-chart-plot/blob/master/challenge_frontend_romulo.png)
 
 
 
