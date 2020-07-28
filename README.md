@@ -1,3 +1,71 @@
+## Author
+
+* **Rômulo Deroci** - *Initial work*
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+
+## Functionality
+
+1. Start Server project https://github.com/rderoci/challenge-eventstore.git
+
+
+2. Open multiple browsers at [http://localhost:3000](http://localhost:3000)
+
+
+3. In just one browser, input these json 'events' in the text area:
+```json
+{type: 'start', timestamp: 1593635356000, select: ['min_response_time', 'max_response_time'], group: ['os', 'browser']}
+{type: 'span', timestamp: 1593738000000, begin: 1593572400000, end: 1596164400000}
+{type: 'data', timestamp: 1593738300000, os: 'linux', browser: 'chrome', min_response_time: 0.1, max_response_time: 1.3}
+{type: 'data', timestamp: 1593738600000, os: 'linux', browser: 'firefox', min_response_time: 0.2, max_response_time: 1.5}
+```
+And click "GENERATE CHART", you will see a line graph plotted in all browsers.
+
+
+4. In another browser, input these json 'events' in the text area:
+```json
+{type: 'data', timestamp: 1593738900000, os: 'windows', browser: 'ie', min_response_time: 0.8, max_response_time: 2.4}
+{type: 'data', timestamp: 1593739200000, os: 'windows', browser: 'firefox', min_response_time: 0.5, max_response_time: 2.2}
+{type: 'data', timestamp: 1593739500000, os: 'mac', browser: 'safari', min_response_time: 0.1, max_response_time: 0.8}
+{type: 'data', timestamp: 1593739800000, os: 'windows', browser: 'ie', min_response_time: 1.0, max_response_time: 2.9}
+{type: 'data', timestamp: 1593740100000, os: 'windows', browser: 'firefox', min_response_time: 0.6, max_response_time: 2.3}
+{type: 'data', timestamp: 1593740400000, os: 'windows', browser: 'firefox', min_response_time: 1.0, max_response_time: 3.0}
+{type: 'data', timestamp: 1593740700000, os: 'linux', browser: 'firefox', min_response_time: 0.1, max_response_time: 2.5}
+{type: 'data', timestamp: 1593741000000, os: 'linux', browser: 'firefox', min_response_time: 0.3, max_response_time: 2.2}
+{type: 'data', timestamp: 1593741300000, os: 'linux', browser: 'firefox', min_response_time: 0.4, max_response_time: 2.4}
+```
+And click "GENERATE CHART", you will see a line graph plotted updated in all browsers.
+
+
+5. In any browser, input this json 'event' in the text area:
+```json
+{type: 'stop', timestamp: 1593741301000}
+```
+And click "GENERATE CHART", you will see a line graph got cleared in all browsers.
+
+
+![Image of Char Plot Challenge](https://github.com/rderoci/challenge-eventstore/raw/master/challenge_frontend_romulo.png)
+
+
+
+
+
+# THE CHALLENGE:
+
 # Plotting a chart
 
 In this challenge, you will implement a web application that plots a line chart based on some manually input data.
@@ -84,6 +152,3 @@ with your changes.
 There is no unique solution to this challenge. The intent is to evaluate candidate's ability and familiarity with tools and best practices.
 
 If you are already in the hiring process, you may send it to whoever is your contact at Intelie. If you wish to apply for a job at Intelie, please send your solution to [trabalhe@intelie.com.br](mailto:trabalhe@intelie.com.br).
-
-
-

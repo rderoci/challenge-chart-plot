@@ -1,0 +1,59 @@
+.App {
+    
+}
+
+.header-component {
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #dddee1;
+    width: 100%;
+}
+
+.name-challenge {
+    position: relative;
+    top: 1px;
+}
+
+.input-command-component {
+    position: relative;
+    font-size: 20px;
+    overflow: auto;
+    resize: vertical;
+    height: 400px;
+    width: auto;
+}
+
+.input-command {
+    
+}
+
+.chart-component {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.footer-component {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #dddee1;
+}
+
+.generate-chart-button {
+    position: relative;
+    top: 25%;
+    left: 5%;
+    background-color: #017eff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
